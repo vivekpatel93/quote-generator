@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #bbc6fa;
+
+}
+.quoteBox{
+    width: 65%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: lightcyan;
+    padding: 1rem;
+    /* border:1px solid; */
+    border-radius: 1.5rem;
+    box-shadow: 0 0 5rem 0 rgb(122, 122, 207);
+}
+.quoteBox h2{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.quoteBox h2::after{
+    content: '';
+    width: 11%;
+    height: 10%;
+    border-radius: 1.5rem;
+    background-color: rgb(69, 69, 238);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+.quoteBox blockquote{
+    font-size: 1.6rem;
+    min-height: 30%;
+    /* border: 1px solid; */
+    padding: .2rem;
+}
+.quoteBox blockquote::before,.quoteBox blockquote::after{
+    content: '"';
+}
+.quoteBox span{
+    position: absolute;
+    top: 60%;
+    right: .92rem;
+    /* border: 1px solid; */
+    font-size: 1rem;
+    padding: .2rem;
+}
+.quoteBox span::before{
+    content: '';
+    width: 25%;
+    height: 7%;
+    border-radius: 1.5rem;
+    background-color: rgb(69, 69, 238);
+    position: absolute;
+    right: 5rem;
+    top:50%;
+    transform: translateX(-50%);
+}
+.quoteBox div{
+    display: block;
+    width: 50%;
+    margin-top: 3rem;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: .3rem;
+}
+.quoteBox div #btn1{
+    padding: .35rem .5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: rgb(93, 93, 245);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quoteBox div #btn2{
+    padding: .6rem .9rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: rgb(93, 93, 245);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quoteBox div button i{
+    padding: .2rem;
+}
